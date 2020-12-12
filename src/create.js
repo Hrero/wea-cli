@@ -65,7 +65,7 @@ async function create(args) {
     console.log(TEMPDIR, 'TEMPDIRTEMPDIR');
     const state = isExistFolder(folderPath);
     if (!state) {
-        await loading(download, '模板下载中...')('Hrero/ag-admin-nest-tmp', TEMPDIR);
+        await loading(download, '构建中...')('Hrero/wea-admin-tmp', TEMPDIR);
         const answers = await question();
         await loading(generator, '项目生成中...')(TEMPDIR, folderName, answers);
     } else {
